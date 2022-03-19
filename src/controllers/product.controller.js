@@ -5,7 +5,6 @@ const Product = require("../models/product.model");
 
 router.get("/", async (req, res) => {
   try {
-    console.log(req.query);
     let discount50 = req.query.discount50 || null;
     let discount100 = req.query.discount100 || null;
     let type1 = req.query.type1 || null;
